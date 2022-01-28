@@ -3,10 +3,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
+    <div class="header">
+        <h1>Rock, Paper, Scissors</h1>
+    </div>
+    <div class="buttons">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+    <div id="choices-div">
+        <div id="player-choice"></div>
+        <div id="pc-choice"></div>
+    </div>
+    <div class="scores">
+        <table>
+            <tr>
+                <th>Player</th>
+                <th>Computer</th>
+            </tr>
+            <tr>
+                <td id="player-score">0</td>
+                <td id="computer-score">0</td>
+            </tr>
+        </table>
+        <h3>Scores</h3>
+    </div>
+
+    <div class="winner">
+        <h3 id="winner-text"></h3>
+    </div>
 </body>
 </html>
